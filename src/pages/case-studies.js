@@ -6,8 +6,8 @@ import goodbitsHero from "../images/goodbits-hero-computer.png";
 const CaseStudiesPage = () => (
   <div>
     <Hero
-      title="A Platform for Building and Sending Beautiful Emails"
-      subtitle="- Goodbits -"
+      subtitle="- Goodbits.io -"
+      title="Web App for Building and Sending Engaging Email"
       image={goodbitsHero}
     />
   </div>

@@ -6,8 +6,8 @@ import { cssVariables as css } from "../../variables/cssvariables";
 const HeaderWrapper = styled.div`
   display: flex;
   background-color: ${css.color.purple};
-  border-top: 2px solid #3e228c;
-  border-bottom: 1px solid #3e228c4a;
+  /* border-top: 2px solid #3e228c; */
+  /* border-bottom: 1px solid #3e228c54; */
   color: #ffffff;
   justify-content: center;
 `;
@@ -20,11 +20,12 @@ const StyledLink = styled(Link)`
   display: flex;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 4rem 2rem;
   flex-grow: 1;
-  font-family: ${css.typography.secondary};
+  font-family: ${css.typography.primary};
   justify-content: center;
+  text-transform: capitalize;
   &:hover {
     color: #ffffff;
   }
