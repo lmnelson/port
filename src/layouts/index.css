@@ -7,14 +7,6 @@
 }
 
 @font-face {
-  font-family: "Soleil Lt";
-  src: url("../fonts/Soleil-Light.woff2") format("woff2"),
-    url("../fonts/Soleil-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Soleil";
   src: url("../fonts/Soleil-Regular.woff2") format("woff2"),
     url("../fonts/Soleil-Regular.woff") format("woff");
@@ -29,6 +21,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  height: 100%;
   font-size: 10px;
 }
 body {

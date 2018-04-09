@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "gatsby-link";
+import MasterTitle from "../components/MasterTitle";
 
 const BlogPage = () => (
   <div>
-    <h1>Blog Page</h1>
+    <MasterTitle title="Blog" />
   </div>
 );
 

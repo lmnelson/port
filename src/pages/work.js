@@ -2,10 +2,10 @@ import React from "react";
 import Link from "gatsby-link";
 import MasterTitle from "../components/MasterTitle";
 
-const ContactPage = () => (
+const CaseStudiesPage = () => (
   <div>
-    <MasterTitle title="Contact Me" />
+    <MasterTitle title="Work" />
   </div>
 );
 
-export default ContactPage;
+export default CaseStudiesPage;

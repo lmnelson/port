@@ -10,8 +10,9 @@ export const cssVariables = {
   },
   color: {
     purple: "#693BEA",
+    red: "#EB2727",
     darkPurple: "#5C34CC",
-    lightGrey: "#E5E5E5",
+    lightGrey: "#FBFBFB",
     charcoal: "#292E36"
   }
 };
