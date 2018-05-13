@@ -14,6 +14,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Calluna";
+  src: url("../fonts/Calluna-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Calluna Italic";
+  src: url("../fonts/Calluna-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -23,13 +37,19 @@ html {
   padding: 0;
   height: 100%;
   font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ddd;
 }
 body {
   font-family: "Soleil, -apple-system, 'Segoe UI', Roboto, Helvetica";
 }
-p,
 a {
-  font-size: 1.8rem;
+  color: #f11414;
+  text-decoration: none;
+}
+a:hover {
+  color: #b40909;
+  text-decoration: underline;
 }
 h1,
 h2,
@@ -38,7 +58,19 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  font-size: 19px;
+  font-family: Calluna, "Times New Roman", Times, serif;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #292e36;
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
 }
 img {
   max-width: 100%;

@@ -1,18 +1,33 @@
 export const cssVariables = {
+  breakpoint: {
+    sm: "600px",
+    md: "900px"
+  },
   scaffold: {
-    smallContainerWidth: "1200px"
+    widthSm: "700px",
+    widthMd: "900px",
+    widthLg: "980px",
+    widthXlg: "1300px",
+    widthMax: "1550px",
+    mobileHorizontalPadding: "20px"
   },
   typography: {
     system:
       "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     primary: "Soleil, -apple-system, 'Segoe UI', Roboto, Helvetica",
-    secondary: "Noticia Text, Georgia, serif"
+    // primary: "-apple-system, 'Segoe UI', Roboto, Helvetica",
+    primaryBold: "Soleil Bold, -apple-system, 'Segoe UI', Roboto, Helvetica",
+    // primaryBold: "-apple-system, 'Segoe UI', Roboto, Helvetica",
+    secondary: "Calluna, Georgia, serif",
+    secondaryItalic: "Calluna Italic, Georgia, serif"
   },
   color: {
     purple: "#693BEA",
-    red: "#EB2727",
+    red: "#f11414",
     darkPurple: "#5C34CC",
     lightGrey: "#FBFBFB",
-    charcoal: "#292E36"
+    grey: "#676767",
+    charcoal: "#292E36",
+    black: "#141619"
   }
 };
