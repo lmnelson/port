@@ -11,7 +11,9 @@ const Wrapper = styled.footer`
   background-color: ${css.color.charcoal};
   padding-top: 70px;
   @media (max-width: ${css.breakpoint.md}) {
-    display: none;
+    grid-template-rows: auto;
+    text-align: center;
+    padding-bottom: 50px;
   }
 `;
 
@@ -21,6 +23,9 @@ const Copyright = styled.div`
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   font-family: ${css.typography.secondaryItalic};
+  @media (max-width: ${css.breakpoint.md}) {
+    display: none;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -44,15 +49,25 @@ const LinksColumn = styled.div`
     list-style-type: none;
     margin-bottom: 20px;
     padding-left: 40px;
+    @media (max-width: ${css.breakpoint.md}) {
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
   }
 `;
 const GridContainer = styled.div`
   margin: 0 auto;
   width: ${css.scaffold.widthLg};
+  @media (max-width: ${css.breakpoint.md}) {
+    width: auto;
+  }
 `;
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 350px 225px 225px auto;
+  @media (max-width: ${css.breakpoint.md}) {
+    grid-template-columns: auto;
+  }
 `;
 const Tagline = styled.div`
   padding-right: 70px;
@@ -75,6 +90,15 @@ const Tagline = styled.div`
   p {
     font-size: 15px;
     font-family: ${css.typography.secondaryItalic};
+  }
+  @media (max-width: ${css.breakpoint.md}) {
+    padding-right: 0;
+    h1 {
+      margin-bottom: 0;
+    }
+    p {
+      margin-bottom: 50px;
+    }
   }
 `;
 

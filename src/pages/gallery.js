@@ -18,6 +18,9 @@ const GalleryWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 30px;
+  @media (max-width: ${css.breakpoint.md}) {
+    grid-template-columns: repeat(1, auto);
+  }
 `;
 
 const LoadingImage = styled.div``;

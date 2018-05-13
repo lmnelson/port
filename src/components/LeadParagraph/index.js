@@ -11,8 +11,6 @@ const Text = styled.p`
   margin-bottom: 40px;
   margin-top: 10px;
   @media (max-width: ${css.breakpoint.md}) {
-    font-size: 18px;
-    line-height: 1.5;
     margin-bottom: 30px;
   }
   &::first-letter {
@@ -23,11 +21,6 @@ const Text = styled.p`
     padding-bottom: 15px;
     padding-top: 35px;
     color: ${css.color.red};
-    @media (max-width: ${css.breakpoint.md}) {
-      font-size: 54px;
-      padding-top: 32px;
-      padding-right: 8px;
-    }
   }
 `;
 

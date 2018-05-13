@@ -32,6 +32,10 @@ const SocialLinks = ({ justifyContent, marginTop }) => {
     flex-direction: row;
     justify-content: ${justifyContent || "normal"};
     margin-top: ${marginTop || 0};
+    @media (max-width: ${css.breakpoint.md}) {
+      justify-content: center;
+      margin-top: 40px;
+    }
   `;
 
   return (

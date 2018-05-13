@@ -41,9 +41,6 @@ const Quote = styled.p`
   font-family: ${css.typography.secondaryItalic};
   margin-bottom: 30px;
   margin-top: 0;
-  @media (max-width: ${css.breakpoint.md}) {
-    font-size: 17px;
-  }
 `;
 const Author = styled.p`
   font-size: 14px;

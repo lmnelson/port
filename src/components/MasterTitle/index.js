@@ -29,7 +29,7 @@ const MasterTitle = ({ title, subtitle, backgroundImage }) => {
     line-height: 1.2;
     margin-bottom: 0;
     @media (max-width: ${css.breakpoint.md}) {
-      font-size: 58px;
+      font-size: 63px;
     }
   `;
   const Subtitle = styled.p`
@@ -41,7 +41,7 @@ const MasterTitle = ({ title, subtitle, backgroundImage }) => {
     margin-top: 10px;
     @media (max-width: ${css.breakpoint.md}) {
       margin-top: 0;
-      font-size: 17px;
+      font-size: 19px;
       padding: 0 20px;
     }
   `;
