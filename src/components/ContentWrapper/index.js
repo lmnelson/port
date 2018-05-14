@@ -9,8 +9,8 @@ const Wrapper = styled.div`
   padding-top: 60px;
   padding-bottom: 60px;
   @media (max-width: ${css.breakpoint.md}) {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 `;
 

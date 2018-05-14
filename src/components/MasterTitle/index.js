@@ -14,7 +14,7 @@ const MasterTitle = ({ title, subtitle, backgroundImage }) => {
     position: relative;
     background: rgba(241, 20, 20, 1);
     @media (max-width: ${css.breakpoint.md}) {
-      padding-top: 100px;
+      padding-top: 60px;
       padding-bottom: 60px;
     }
   `;

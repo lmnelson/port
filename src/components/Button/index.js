@@ -18,6 +18,7 @@ const Wrapper = styled(Link)`
   &:hover {
     background-color: ${css.color.red};
     color: #fff;
+    text-decoration: none;
   }
 `;
 

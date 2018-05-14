@@ -1,14 +1,12 @@
 import React from "react";
+import { Component } from "react";
 import Link from "gatsby-link";
 import styled from "styled-components";
 import Container from "../Container";
 import SocialLinks from "../SocialLinks";
 import { cssVariables as css } from "../../variables/cssvariables";
 
-import medium from "../../images/icon_medium.svg";
-import linkedIn from "../../images/icon_linkedIn.svg";
-import dribbble from "../../images/icon_dribbble.svg";
-import github from "../../images/icon_github.svg";
+import menuIcon from "../../images/icons8-menu_filled.svg";
 
 const activeClassName = "active";
 
@@ -18,7 +16,6 @@ const Wrapper = styled.div`
   color: #ffffff;
   padding: 30px 30px;
   @media (max-width: ${css.breakpoint.md}) {
-    display: none;
   }
 `;
 const Brand = styled.div`
@@ -58,6 +55,15 @@ const StyledLink = styled(Link)`
     text-decoration: none;
   }
   transition: all 0.2s linear;
+  @media (max-width: ${css.breakpoint.md}) {
+    display: none;
+  }
+`;
+const DrawerToggle = styled.button`
+  width: 40px;
+  @media (min-width: ${css.breakpoint.md}) {
+    display: none;
+  }
 `;
 const Nav = styled.div`
   display: flex;
@@ -71,28 +77,44 @@ const TextLinks = styled.div`
   flex-direction: row;
   margin-right: 40px;
 `;
+const SocialLinksWrapper = styled.div`
+  @media (max-width: ${css.breakpoint.md}) {
+    display: none;
+  }
+`;
 
-const GlobalNav = () => (
-  <Wrapper>
-    <Brand />
-    <Nav>
-      <TextLinks>
-        <StyledLink to="/work" activeClassName={activeClassName}>
-          Work
-        </StyledLink>
-        <StyledLink to="/gallery" activeClassName={activeClassName}>
-          Gallery
-        </StyledLink>
-        <StyledLink to="/about" activeClassName={activeClassName}>
-          About
-        </StyledLink>
-        <StyledLink to="/contact" activeClassName={activeClassName}>
-          Contact
-        </StyledLink>
-      </TextLinks>
-      <SocialLinks marginTop="-6px" />
-    </Nav>
-  </Wrapper>
-);
+export default class GlobalNav extends Component {
+  constructor(props) {
+    super(props);
+  }
 
-export default GlobalNav;
+  render() {
+    return (
+      <Wrapper>
+        <Brand />
+        <Nav>
+          <TextLinks>
+            <StyledLink to="/work" activeClassName={activeClassName}>
+              Work
+            </StyledLink>
+            <StyledLink to="/gallery" activeClassName={activeClassName}>
+              Gallery
+            </StyledLink>
+            <StyledLink to="/about" activeClassName={activeClassName}>
+              About
+            </StyledLink>
+            <StyledLink to="/contact" activeClassName={activeClassName}>
+              Contact
+            </StyledLink>
+          </TextLinks>
+          <SocialLinksWrapper>
+            <SocialLinks marginTop="-6px" />
+          </SocialLinksWrapper>
+          <DrawerToggle onClick={this.props.handler}>
+            <img src={menuIcon} />
+          </DrawerToggle>
+        </Nav>
+      </Wrapper>
+    );
+  }
+}
